@@ -32,33 +32,7 @@ function validateForm(){
     }
 }
 
-function storeFormData(){
-    const user = {
-        name: form.name.value,
-        Quantity: form.Quantity.value,
-        phone: form.phone.value,
-        Address1: form.Address1.value,
-        Address2: form.Address2.value,
-        Address3: form.Address3.value,
 
-    }
-    console.log(user)
-  
-}
 
-function processFormData(e){
-    e.preventDefault();
-
-    // validate form
-    validateForm()
-
-    // submit data if valid
-    let isValid = form.checkValidity()
-    if(isValid && passWordsMatch){
-        storeFormData();
-    }
-}
-
-window.addEventListener("submit", processFormData);
 
 
