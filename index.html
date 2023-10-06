@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Buy NOW</h1>
+      <!-- Form -->
+      <form id="form" action="mail.php" method="post">
+        <!-- Product Price -->
+       
+          <!-- Quantity -->
+          <div class="box" id="level1">
+            <label for="Quantity">Quantity</label>
+            <input type="number" id="Quantity" min="1"  required name="Quantity"/>
+          </div>
+          <!-- Name -->
+          <div class="box" id="level1">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="please enter your name" required name="name"/>
+          </div>
+          <!-- phone -->
+          <div class="box" id="level1">
+            <label for="phone">Phone Number</label>
+            <input type="phone" id="phone" placeholder="9999-999-9999" required  name="phone"/>
+          </div>
+          <!--Address -->
+          <div class="box">
+            <label for="Address1">Address Line 1</label>
+            <input type="Address" id="Address1" placeholder="room no , street.." required name="Address1"/>
+          </div>
+          <!--Address 2 -->
+          <div class="box">
+            <label for="Address2">Address Line 2</label>
+            <input type="Address" id="Address2" placeholder="room no , street.." required name="Address2"/>
+          </div>
+          <!--Address 3 -->
+          <div class="box">
+            <label for="Address3">Address Line 3</label>
+            <input type="Address" id="Address3" placeholder="room no , street.." required name="Address3"/>
+          </div>
+          <!--Payment-->
+          <div class="box">
+            <label >Payment Mode</label>
+            <input type="text" id="Address" value="Pay On Delivery (Digital Payment Comming soon)" readonly name="payment"/>
+          </div>
+          <!-- Buy -->
+        
+          <button type="submit">Placed Order</button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
